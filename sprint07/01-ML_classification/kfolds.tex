@@ -1,0 +1,33 @@
+\documentclass[border=2mm]{standalone}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\begin{document}
+\begin{tikzpicture}[scale=1]
+
+\draw [red,thin,|-|] (0,5) -- (12,5) node [pos=.5, below] {Número total de datos};
+
+\foreach \x in {0,2.5,...,10}{
+	 \foreach \y in {0,0.75,...,3}{
+		\fill[orange] (\x,\y) -- (\x+2,\y) -- (\x+2,\y+0.5) --(\x,\y+0.5)  -- cycle;
+	}
+}
+ \fill [blue] (10,3) rectangle (12,3.5);
+\fill [blue] (7.5,2.25) rectangle (9.5,2.75);
+\fill [blue] (5,1.5) rectangle (7,2);
+\fill [blue] (2.5,.75) rectangle (4.5,1.25);
+\fill [blue] (0,0) rectangle (2,.5);
+
+\node (a) at (-1.5,0.25) {iteración 1};
+\node (a) at (-1.5,1) {iteración 2};
+\node (a) at (-1.5,1.75) {iteración 3};
+\node (a) at (-1.5,2.5) {iteración 4};
+\node (a) at (-1.5,3.25) {iteración 5};
+
+ \fill [blue] (0,-1) rectangle (2,-.5);
+\node[right] (a) at (2.5,-.75) {Validación};
+\fill [orange] (0,-2) rectangle (2,-1.5);
+\node[right] (a) at (2.5,-1.75) {Entrenamiento};
+\end{tikzpicture}
+\end{document}
