@@ -1,0 +1,32 @@
+\documentclass[border=2mm]{standalone}
+\usepackage[latin1]{inputenc}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{xcolor}
+
+\newcommand\MyBox[4]{
+\fcolorbox{#1}{#2}{\lower0.75cm
+\vbox to 2.7cm{\vfil
+\hbox to 2.7cm{\hfil\parbox{2.25cm}{#3\\#4}\hfil}
+\vfil}%
+}%
+}
+
+\begin{document}
+
+\noindent
+\renewcommand\arraystretch{1.5}
+\setlength\tabcolsep{0pt}
+\begin{tabular}{c >{\bfseries}r @{\hspace{0.7em}}c @{\hspace{0.4em}}c 
+@{\hspace{0.7em}}l}
+\multirow{14}{*}{\rotatebox{90}{\parbox{1.1cm}{\bfseries\centering Valor\\ 
+real}}} & 
+& \multicolumn{2}{c}{\bfseries Predicción} & \\
+& & \bfseries p & \bfseries n & \bfseries total \\
+& p$'$ & \MyBox{orange}{orange!50}{True Positive}{TP} & \MyBox{cyan}{cyan!80}{False Negative}{FN} & P$'$ \\[2.4em]
+& n$'$ & \MyBox{blue}{blue!60!}{False Positive}{FP} & \MyBox{red}{red!70}{True Negative}{TN} & N$'$ \\
+& total & P & N &
+\end{tabular} 
+
+\end{document}
