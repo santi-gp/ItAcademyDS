@@ -1,0 +1,21 @@
+Date: Sun, 03 Sep 2023 18:12:37 GMT
+Server: mw1473.eqiad.wmnet
+X-Content-Type-Options: nosniff
+Content-Language: en
+Accept-Ch: 
+Vary: Accept-Encoding,Cookie
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: gzip
+Age: 723
+X-Cache: cp6015 miss, cp6015 hit/5
+X-Cache-Status: hit-front
+Server-Timing: cache;desc="hit-front", host;desc="cp6015"
+Strict-Transport-Security: max-age=106384710; includeSubDomains; preload
+Report-To: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
+Nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
+Set-Cookie: WMF-Last-Access=03-Sep-2023;Path=/;HttpOnly;secure;Expires=Thu, 05 Oct 2023 12:00:00 GMT
+Set-Cookie: WMF-Last-Access-Global=03-Sep-2023;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Thu, 05 Oct 2023 12:00:00 GMT
+Set-Cookie: GeoIP=ES:CT:Cornell___de_Llobregat:41.35:2.08:v4; Path=/; secure; Domain=.wikipedia.org
+Set-Cookie: NetworkProbeLimit=0.001;Path=/;Secure;Max-Age=3600
+X-Client-Ip: 62.14.76.166
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate

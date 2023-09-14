@@ -1,0 +1,100 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[latin1]{inputenc}
+%\usepackage[spanish]{babel}
+%\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{grffile}
+\usepackage{makeidx,graphics,graphicx,array}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\newtheorem{defi}{Definición}%[chapter]
+%\newtheorem{col}{Corolario}[chapter]
+%\newtheorem{teo}{Teorema}%[chapter]
+%\newtheorem{lem}{Lema}[chapter]
+%\newtheorem{prob}[teo]{Problema}%[chapter]
+%\newtheorem{obs}{Observación}[chapter]
+%\newtheorem{eje}{Ejemplo}[chapter]
+%\newtheorem{ejer}{Ejercicio}[chapter]
+%\newtheorem{expe}{Experimento}[chapter]
+%\renewcommand*{\proofname}{\textbf{Solución}}
+\title{Ejercicio 2}
+\author{}
+\date{}
+\begin{document}
+\maketitle
+\section{Estadísticas de los juegos olímpicos de Rio 2016}
+Medallero de los juegos olímpicos de 2016
+
+\section{Acerca del conjunto de datos}
+
+\subsection{Contexto}
+
+Este conjunto de datos contiene estadísticas de las medallas logradas por los 11 mejores países que participaron en los juegos olímpicos de Río de Janeiro 2016.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{lllllll}
+\hline
+index & ranking &                country & gold\_medal & silver\_medal & bronze\_medal & total \\
+\hline
+0  &       1 &   Estados Unidos (USA) &         46 &           37 &           38 &   121 \\
+1  &       2 &      Reino Unido (GBR) &         27 &           23 &           17 &    67 \\
+2  &       3 &            China (CHN) &         26 &           18 &           26 &    70 \\
+3  &       4 &            Rusia (RUS) &         19 &           18 &           19 &    56 \\
+4  &       5 &         Alemania (GER) &         17 &           10 &           15 &    42 \\
+5  &       6 &            Japón (JPN) &         12 &            8 &           21 &    41 \\
+6  &       7 &          Francia (FRA) &         10 &           18 &           14 &    42 \\
+7  &       8 &    Corea del Sur (KOR) &          9 &            3 &            9 &    21 \\
+8  &       9 &           Italia (ITA) &          8 &           12 &            8 &    28 \\
+9  &      10 &        Australia (AUS) &          8 &           11 &           10 &    29 \\
+10 &      13 &           Brasil (BRA) &          7 &            6 &            6 &    19 \\
+\hline
+\end{tabular}
+\caption{}
+\label{tab1}
+\end{table}
+
+\section{Contenido}
+11 filas y 6 columnas.
+
+La descripción de las columnas se enumera a continuación.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Variable} & \textbf{Descripción}\\
+\hline
+ranking & posición\\
+country & país\\
+gold\_medal & medalla de oro\\
+silver\_medal & medalla de plata\\
+bronze\_medal & medalla de bronce\\
+total & total\\
+\hline
+\end{tabular}
+\caption{}
+\label{tab2}
+\end{table}
+\subsection{Información del DataFrame}
+De la tabla \ref{tab3} podemos observar que nuestras variables son \textit{strings}, pero si observamos la tabla \ref{tab1} a excepción de la columna \textbf{country} las demás parecen ser numéricas.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{llll}
+\#  & Column  &       Non-Null Count &   Dtype\\ 
+--- &  ------   &      --------------  ----- \\ 
+ 0  &  ranking    &    11 non-null   &   object \\
+ 1  &  country     &   11 non-null   &   object\\
+ 2  &   gold\_medal  &   11 non-null  &    object\\
+ 3  &  silver\_medal &  11 non-null   &   object\\
+ 4  &  bronze\_medal &  11 non-null    &  object\\
+ 5  &  total       &   11 non-null    &  object\\
+
+\end{tabular}
+\caption{}
+\label{tab3}
+\end{table}
+\section{Conclusión}
+Hemos visto la manera de obtener datos a través de WebScraping, pero para hacer estudios como un modelado estos datos no están listos para su estudio, por ejemplo, en los datos de la tabla \ref{tab1} para hacer el preprocesado se tienen que transformar estas variables, \textbf{country} como categórica y el resto como numéricas.
+\end{document}
