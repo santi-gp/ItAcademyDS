@@ -1,0 +1,63 @@
+1. Install and configure your working environment 
+
+1.1 Introduction to Github 
+1.2 Jupyter Notebook i Markdown 
+
+2. Relational databases (SQL) 
+
+2.1 Relational databases 
+2.2 SQL and MySQL 
+
+3. Python Basics 
+
+3.1 Data structures 
+3.2 Control structures 
+
+4. Numerical Programming, Data Frames and Statistical Analysis 
+
+4.1 Introduction to Numpy, Pandas and descriptive statistics 
+4.2 Numerical programming: Numpy 
+4.3 Dataframes: Pandas 
+
+5. Graphical visualisation of data 
+
+5.1 Matplotlib library 
+5.2 Seaborn library 
+
+6. Introduction to hypothesis testing and machine learning 
+
+6.1 Basic probability and statistical analysis using SciPy
+6.2 Hypothesis testing 
+6.3 Introduction to machine learning using Scikit-Learn 
+6.4 Introduction to train testing with Scikit-Learn 
+
+7. Supervised learning algorithms: Regression 
+
+7.1 Introduction and resources for regression 
+7.2 Evaluating regression models 
+7.3 Neural Networks 
+7.4 Advanced Regression Models 
+
+8. Supervised Learning Algorithms: Classification 
+
+8.1 Introduction and resources for classification 
+8.2 Evaluating Classification Models 
+8.3 Logistic regression 
+
+9. Unsupervised learning algorithms: Clustering 
+
+9.1 Introduction to clustering 
+9.2 Principal Component Analysis (PCA) 
+9.3 Hierarchical clustering algorithms and model evaluation 
+
+10. Sentiment and Text Analysis 
+
+10.1 Analysis of sentiment
+10.2 Natural language toolkit 
+
+11. Web Scraping and Automation 
+
+11.1 Web Scraping and Automation Libraries 
+11.2 BeautifulSoup library
+11.3 Selenium library
+11.4 ScraPy library
